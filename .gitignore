@@ -1,8 +1,46 @@
+# Virtual environments
 .venv/
+env/
+venv/
+
+# macOS system files
 .DS_Store
+
+# Python bytecode
 *.pyc
-__pycache__/
 *.pyo
 *.pyd
+__pycache__/
+
+# Database files
 *.db
-*.sqlite3       
+*.sqlite3
+
+# Logs and reports
+*.log
+*.out
+
+# Test and coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Misc
