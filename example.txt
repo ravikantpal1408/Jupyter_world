@@ -1,1 +1,1 @@
-this is a string that will be written to a file example.txt lets write some more code to test the file writing and reading functionality in python
+this is a string that will be written to a file example.txt lets write some more code to test the file writing and reading functionality in python. Some more text for the testing purpose in the jupyter notebook
