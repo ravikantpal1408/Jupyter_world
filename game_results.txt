@@ -1,0 +1,5 @@
+99 guessed 27 in 8 attempts
+12 guessed 10 in 3 attempts
+22,7
+12,6
+90,6
