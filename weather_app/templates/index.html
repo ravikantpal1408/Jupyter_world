@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 400px; margin: auto; }
+        input, button { padding: 10px; margin-top: 10px; width: 100%; }
+        .result { margin-top: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form method="POST" action="/">
+            <input type="text" name="city" placeholder="Enter city name" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        {% if weather %}
+            <div class="result">
+                <h3>{{ weather.city }}, {{ weather.country }}</h3>
+                <p>🌡 Temperature: {{ weather.temperature }}°C</p>
+                <p>☁ Condition: {{ weather.description }}</p>
+            </div>
+        {% elif error %}
+            <div class="result" style="color: red;">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
