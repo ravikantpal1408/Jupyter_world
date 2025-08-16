@@ -14,6 +14,7 @@ __pycache__/
 
 # Database files
 *.db
+.env
 *.sqlite3
 
 # Logs and reports
